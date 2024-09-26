@@ -56,7 +56,7 @@ void removeCycle(node* &head){
     } while (slow!=fast);
 
     fast=head;
-    while(slow->next!=fastt->next){
+    while(slow->next!=fast->next){
         slow=slow->next;
         fast=fast->next;
     }
