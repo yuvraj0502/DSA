@@ -16,7 +16,7 @@ public:
 
         while(temp!=NULL){
             number=number*10+temp->val;
-            temp=temp->next;
+            temp=temp->next;  
         }
         number*=2;
         if(number==0){
