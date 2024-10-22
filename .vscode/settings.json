@@ -8,6 +8,11 @@
     "xutility": "cpp",
     "algorithm": "cpp",
     "iostream": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "stack": "cpp",
+    "__locale": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "__string": "cpp"
   }
 }
