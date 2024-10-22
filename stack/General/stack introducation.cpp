@@ -17,6 +17,15 @@ stack function
    5. pop()  :   This function to remove or pop the element from the top of stack.This function
                  does not take any parameter, this function does not return any value.
 
+   6. emplace(value) : This function is used to insert a new element into the stack container, the new 
+                 element is added on top of the stack
+
+   7. swap() : This function is used to swap the contents of one stack with another stack of same
+         type but the size may vary.
+         Time Complexity : O(1)
+         Auxiliary Space : O(n)
+
+
 
 
 Time Complexity : The time Complexity of this program is O(N), here N is number of total number
@@ -26,11 +35,6 @@ Space Complexity : The space Complexity of this program is O(N),here N is number
                    element in the stack.
 
 
-emplace(value) : This function is used to insert a new element into the stack container, the new 
-                 element is added on top of the stack
 
 
-swap() : This function is used to swap the contents of one stack with another stack of same
-         type but the size may vary.
-         Time Complexity : O(1)
-         Auxiliary Space : O(n)
+ 
