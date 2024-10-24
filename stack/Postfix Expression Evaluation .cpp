@@ -1,18 +1,20 @@
-#include<bits/stdc++.h>
-#include<stack>
-#include<math.h>
-using namespace std;
+ #include<bits/stdc++.h>
+ #include<stack>
+ #include<math.h>
+ using namespace std;
 
-int prefixEvaluation(string s){
+
+int postfixEvaluation(string s){
     stack<int>st;
 
-    for(int i=s.length()-1;i>=0;i--){
+    for(int i=0;i<=s.length()-1;i++){
         if(s[i]>='0' && s[i]<='9'){
             st.push(s[i]-'0');
-        }else{
-            int op1=st.top();
-            st.pop();
+        }
+        else{
             int op2=st.top();
+            st.pop();
+            int op1=st.top();
             st.pop();
 
             switch (s[i])
@@ -41,13 +43,14 @@ int prefixEvaluation(string s){
                 break;
             }
         }
-    } 
+    }
     return st.top();
 }
 
-int main(){
-      cout<<prefixEvaluation("-+7*45+20")<<endl;
-      return 0;
-}
+ int main(){
+    cout<<postfixEvaluation("46+2/5*7+")<<endl;
+    return 0;
+ }
 
-//Time Complexity : O(n) , here n is length of string expression
+
+//Time Complextity : O(n), here n is length of string 
