@@ -13,6 +13,8 @@
     "__locale": "cpp",
     "string": "cpp",
     "string_view": "cpp",
-    "__string": "cpp"
+    "__string": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp"
   }
 }
