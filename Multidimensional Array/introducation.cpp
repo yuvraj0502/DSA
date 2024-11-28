@@ -31,4 +31,4 @@ arr1 size is = 8(element size) * 4(int data type ) = 32 bytes.
 
 int arr2[2][4][8];
 Array int arr2[2][4][8] can store total (2*4*8) = 64 elements.
-The Total size of ‘arr2‘ = 64*4 = 256 bytes.
+The Total size of `arr2` = 64*4 = 256 bytes.
