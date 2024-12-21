@@ -7,7 +7,7 @@ public:
                 break;
             }
             if(s[i]!=' '){
-                length++;
+                length++
             }
         }
         return length;
