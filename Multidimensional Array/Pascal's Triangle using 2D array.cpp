@@ -2,20 +2,18 @@
 using namespace std;
 
 vector<vector<int>>PascalTrianle(int n){
-     vector<vector<int>>pascal(n);
-
-     for(int i=0;i<n;i++){
-        pascal[i].resize(i+1);
-
-        for(int j=0;j<=i;j++){
-            if(j==0 || j==1){
-                pascal[i][j]=1;
-            }else{
-                pascal[i][j]=pascal[i-1][j]+pascal[i-1][j-1];
+      vector<vector<int>>result(n);
+        for(int i=0;i<n;i++){
+            result[i].resize(i+1);
+            for(int j=0;j<=i;j++){
+                if(j==0 || j==i){
+                    result[i][j]=1;
+                }else{
+                    result[i][j]=result[i-1][j-1]+result[i-1][j];
+                }
             }
         }
-     }
-     return pascal;
+        return result;
 }
 
 int main(){
