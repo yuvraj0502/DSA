@@ -13,8 +13,8 @@
 //     4. If not, swap the element with one of its children and return to the 
 //         previous step.
 
+// Time Complexity : O(log n)
 
-// C++ program for implement deletion in Heaps
 
 #include <bits/stdc++.h>
 using namespace std;
